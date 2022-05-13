@@ -6,115 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Military</title>
     <link rel="stylesheet" href="reset.css">
-    <style>
-    @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala&display=swap');
-        
-        body {
-            font-family: 'Sarala', sans-serif;
-        }
-
-        .cabecalho {
-            background-image: url(banner.webp);
-        }
-        .cabecalho-main {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-around;
-            padding: 24px;
-        }
-
-        .cabecalho-main-texto {
-            font-weight: 300;
-            font-size: 72px;
-            color:#FFF2E7;
-        }
-
-        .cabecalho-main-menu {
-            display: flex;
-            gap: 32px;
-        }
-
-        .cabecalho-main-menu-item {
-            font-family: 'Sarala', sans-serif;
-            color:#FFF2E7;
-            font-weight: 400;
-            font-size: 18px;
-        }
-         .cabecalho-selection {
-            border-top: 1.5px solid #FFF2E7;
-            padding: 100px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 50px;
-         }
-
-        .cabecalho-selection-texto-titulo {
-            font-family: 'Righteous', cursive;
-            font-weight: 400;
-            font-size: 64px;
-            color:#FFF2E7;
-        }
-
-        .cabecalho-selection-texto-texto {
-            font-family: 'Sarala', sans-serif;
-            font-weight: 400;
-            font-size: 32px;
-            color: #ECD6C4;
-        }
-
-        .cabecalho-selection-texto-button {
-            background-color: #ECD6C4;
-            width: 180px;
-            height: 67px;
-            border: none;
-            box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
-            border-radius: 20px;
-            font-family: 'Sarala', sans-serif;
-            font-weight: 400;
-            font-size: 24px;
-            color:#2F2325;
-        }
-
-        .conteudo {
-            background-image: url(background.jpg);
-            border-top: 1.5px solid #FFF2E7;
-        }
-
-        .teste {
-            color:white;
-            font-size: 40px;
-            padding:100px
-        }
-    
-    </style>
+    <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
     <header class="cabecalho">
         <div class="cabecalho-main">
             <h1 class="cabecalho-main-texto">Military</h1>
-            <nav class="cabecalho-main-menu">
-                <a class="cabecalho-main-menu-item">Home</a>
-                <a class="cabecalho-main-menu-item">Soldiers life</a>
-                <a class="cabecalho-main-menu-item">Services</a>
-                <a class="cabecalho-main-menu-item">Contacts</a>
+            <nav>
+                <ul class="cabecalho-main-menu">
+                    <li><a href="index.html" class="cabecalho-main-menu-item">Home</a></li>
+                    <li><a href="" class="cabecalho-main-menu-item">Soldiers life</a></li>
+                    <li><a href="" class="cabecalho-main-menu-item">Services</a></li>
+                    <li><a href="" class="cabecalho-main-menu-item">Contacts</a></li>
+                </ul>
             </nav>
         </div>
         <div class="cabecalho-selection">
-            <h1 class="cabecalho-selection-texto-titulo">The Country is strong with a strong army</h1>
+            <h1 class="cabecalho-selection-texto-titulo">O País é forte com um exército forte</h1>
             <p class="cabecalho-selection-texto-texto">Junte-se ao exercíto Brasileiro</p>
-            <input type="button" value="More Info" class="cabecalho-selection-texto-button">
+            <input type="button" value="More Info" class="cabecalho-selection-texto-botao">
         </div>
     </header>
 
     <main class="conteudo">
-        <p class="teste">Aqui vai 4 imagens = Infataria, aviação, Paraquedista e Marinha</p>
+       <ul class="conteudo-lista">
+           <li class="conteudo-lista-separada">
+                <h2>Infantaria</h2>
+                <img>
+                <p>A Infantaria é uma especialização do exército cujo pessoal se envolve em combate militar</p>
+           </li>
+           <li class="conteudo-lista-separada">
+                <h2>Aeronáutica</h2>
+                <img>
+                <p>A Aeronáutica é o ramo militar nacional que conduz principalmente a guerra aérea.</p>
+           </li>
+           <li class="conteudo-lista-separada">
+                <h2>PQD</h2>
+                <img>
+                <p>A Brigada de Infantaria Pára-quedista é uma brigada aerotransportada do Exército Brasileiro.</p>
+           </li>
+           <li class="conteudo-lista-separada">
+                <h2>Marinha</h2>
+                <img>
+                <p>A Marinha do Brasil é o ramo de serviço naval das Forças Armadas Brasileiras.</p>
+           </li>
+       </ul>
     </main>
 
-    <footer>
-
+    <footer class="rodape">
+        <p class="rodape-texto">&copy Copyright Augusto Lima - 2022</p>
     </footer>
 </body>
 </html>
