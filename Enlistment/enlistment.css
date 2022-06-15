@@ -46,7 +46,96 @@ body {
 
 /* Main */
 
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 48px 24px;
+}
 
+.container-form-ul {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 50px 
+}
+
+.container-form-li {
+    display: flex;
+    justify-content:space-between
+}
+
+.container-form-li-input {
+    min-width: 300px;
+    min-height: 22px;
+    border-radius: 10px;
+}
+
+#container-form-li-input-dataNascimento {
+    min-width: 150px;
+    min-height: 20px;
+    border-radius: 10px;
+}
+
+#container-form-li-textarea {
+    display: flex;
+    flex-direction: column;
+    gap:32px
+}
+
+#container-form-li-label-textarea {
+    min-width: 560px;
+    max-width: 560px;
+    min-height: 150px;
+    max-height: 600px;
+    border-radius: 10px;
+}
+
+.container-form-h {
+    display: flex;
+    justify-content: center;
+    font-family: 'Sarala', sans-serif;
+    color:#ECD6C4;
+    font-weight: 1000;
+    font-size: 64px;
+    text-decoration: none;
+    border-bottom: 1.5px solid #FFF2E7;
+    padding-bottom: 33px;
+}
+
+#container-form-li-botao {
+    background-color: #ECD6C4;
+    width: 180px;
+    height: 67px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color:#2F2325;
+}
+
+#container-form-li-botao-flex {
+    display: flex;
+    justify-content: center;
+}
+
+#container-form-li-botao:hover {
+    background-color:#d18548;
+    font-weight: 1000;
+}
+
+.container-label-input, .container-label-input-semHover {
+    font-family: 'Sarala', sans-serif;
+    color:#FFF2E7;
+    font-weight: 400;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.container-label-input:hover {
+    color:#d18548;
+}
 
 /* Footer */
 

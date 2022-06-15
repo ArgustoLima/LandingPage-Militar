@@ -23,23 +23,51 @@
         </div>
     </header>
 
-    <main>
-        <section class="container">
-            <form class="container-form">
-                <h1>Alistamento</h1>
-                <div class="msg"></div>
-                <div>
-                    <label for="nome">Nome</label>
-                    <input type="text" name="nome" id="nome">
-                </div>
-                <div>
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email">
-                </div>
-
-                
-            </form>
-        </section>
+    <main class="container">
+        <form class="container-form">
+            <ul class="container-form-ul">
+                <li class="container-form-h">
+                    Alistamento
+                </li>
+                <li class="msg"></li>
+                <li class="container-form-li">
+                    <label for="nome" class="container-label-input">Nome</label>
+                    <input type="text" name="nome" id="nome" class="container-form-li-input">
+                </li>
+                <li class="container-form-li">
+                    <label for="cpf" class="container-label-input">CPF</label>
+                    <input type="text" name="cpf" id="cpf" class="container-form-li-input" placeholder="xxx.xxx.xxx-xx">
+                </li>
+                <li class="container-form-li">
+                    <label for="email" class="container-label-input">Email</label>
+                    <input type="email" name="email" id="email" class="container-form-li-input" placeholder="exemplo@gmail.com">
+                </li>
+                <li class="container-form-li">
+                    <label for="telefone" class="container-label-input">Telefone</label>
+                    <input type="tel" name="telefone" id="telefone" class="container-form-li-input" placeholder="(99) 99999-9999">
+                </li>
+                <li class="container-form-li">
+                    <label for="container-form-li-input-dataNascimento" class="container-label-input">Data de Nascimento</label>
+                    <input type="date" name="container-form-li-input-dataNascimento" id="container-form-li-input-dataNascimento">
+                </li>
+                <li class="container-form-li">
+                    <p class="container-label-input-semHover">Gênero: </p>                   
+                    <input type="radio" name="genero" id="generoMasculino">
+                    <label for="generoMasculino" class="container-label-input">Masculino</label>                   
+                    <input type="radio" name="genero" id="generoFeminino">
+                    <label for="generoFeminino" class="container-label-input">Feminino</label>
+                    <input type="radio" name="genero" id="generoOutro">
+                    <label for="generoOutro" class="container-label-input">Outro</label>
+                </li>
+                <li class="container-form-li" id="container-form-li-textarea">
+                    <label for="container-form-li-label-textarea" class="container-label-input">Por que você quer entrar no Exército Brasileiro?</label>
+                    <textarea name="container-form-li-label-textarea" id="container-form-li-label-textarea" placeholder="Eu quero servir ao exército porque..."></textarea>
+                </li>
+                <li class="container-form-li" id="container-form-li-botao-flex">
+                    <input type="button" value="Enviar" id="container-form-li-botao">
+                </li>
+            </ul>
+        </form>
     </main>
     
     <footer class="rodape">
