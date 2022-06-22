@@ -16,7 +16,7 @@
             <nav>
                 <ul class="cabecalho-main-menu">
                     <li><a href="../Index/index.html" class="cabecalho-main-menu-item">Home</a></li>
-                    <li><a href="../SoldiersLife/soldiersLife.html" class="cabecalho-main-menu-item">Soldiers life</a></li>
+                    <li><a href="../CommonQuestions/commonQuestions.html" class="cabecalho-main-menu-item">Common Questions</a></li>
                     <li><a href="../Patents/patents.html" class="cabecalho-main-menu-item">Patents</a></li>
                     <li><a href="enlistment.html" class="cabecalho-main-menu-item">Enlistment</a></li>
                 </ul>
@@ -25,12 +25,12 @@
     </header>
 
     <main class="container">
-        <form class="container-form">
+        <form class="container-form" name="formulario">
             <ul class="container-form-ul">
                 <li class="container-form-h">
                     Alistamento
                 </li>
-                <li class="msg"></li>
+                <span id="msg"></span>
                 <li class="container-form-li">
                     <label for="nome" class="container-label-input">Nome</label>
                     <input type="text" name="nome" id="nome" class="container-form-li-input">
@@ -49,7 +49,7 @@
                 </li>
                 <li class="container-form-li">
                     <label for="container-form-li-input-dataNascimento" class="container-label-input">Data de Nascimento</label>
-                    <input type="date" name="container-form-li-input-dataNascimento" id="container-form-li-input-dataNascimento">
+                    <input type="date" name="dataNascimento" id="container-form-li-input-dataNascimento">
                 </li>
                 <li class="container-form-li">
                     <p class="container-label-input-semHover">Gênero: </p>                   
@@ -62,10 +62,10 @@
                 </li>
                 <li class="container-form-li" id="container-form-li-textarea">
                     <label for="container-form-li-label-textarea" class="container-label-input">Por que você quer entrar no Exército Brasileiro?</label>
-                    <textarea name="container-form-li-label-textarea" id="container-form-li-label-textarea" placeholder="Eu quero servir ao exército porque..."></textarea>
+                    <textarea name="textarea" id="container-form-li-label-textarea" placeholder="Eu quero servir ao exército porque..."></textarea>
                 </li>
                 <li class="container-form-li" id="container-form-li-botao-flex">
-                    <input type="button" value="Enviar" id="container-form-li-botao">
+                    <input type="button" value="Enviar" id="container-form-li-botao" onclick="validar()">
                 </li>
             </ul>
         </form>

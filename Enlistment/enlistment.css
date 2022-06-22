@@ -9,6 +9,8 @@ body {
 
 .cabecalho {
     background-image: url("../Imagens/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .cabecalho-main {
@@ -94,7 +96,7 @@ body {
     display: flex;
     justify-content: center;
     font-family: 'Sarala', sans-serif;
-    color:#ECD6C4;
+    color:#FFF2E7;
     font-weight: 1000;
     font-size: 64px;
     text-decoration: none;
@@ -135,6 +137,18 @@ body {
 
 .container-label-input:hover {
     color:#d18548;
+}
+
+#msg {
+    border: rgb(42, 39, 39) solid 2px;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(250, 80, 80);
+    font-family: 'Sarala', sans-serif;
+    font-size: 18px;
+    font-weight: bolder;
+    display: none;
 }
 
 /* Footer */

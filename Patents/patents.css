@@ -11,6 +11,8 @@ body {
 
 .cabecalho {
     background-image: url("../Imagens/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .cabecalho-main {
@@ -86,7 +88,48 @@ body {
     font-weight: 1000;
 }
 
-/* Main */
+/* Main - Titulo */
+
+.conteudo-titulo-h1 {
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 64px;
+    color:#FFF2E7;
+}
+
+/* Main - Nav */
+
+.conteudo-navegacao {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.conteudo-navegacao-ul {
+    display: flex;
+    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+    gap:50px;
+}
+
+.conteudo-navegacao-li {
+    text-decoration: none;
+    font-family: 'Roboto Slab', serif;
+    color: #FFF2E7;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.conteudo-navegacao-li:hover {
+    color:#d18548;
+    font-weight: bold;
+}
+
+/* Main - Tabela */
 
 .conteudo-tabela {
     display: flex;
@@ -94,11 +137,7 @@ body {
     padding: 100px 0;
 }
 
-.conteudo-tabela-coluna {
-    border: #ECD6C4 solid 2px;
-}
-
-.conteudo-tabela-linha-head-patente {
+.conteudo-tabela-linha-head-patente, .conteudo-tabela-linha-head-descricao {
     width: 300px;
     height: 50px;
     font-family: 'Sarala', sans-serif;
@@ -106,25 +145,37 @@ body {
     font-size: 32px;
     font-weight: bold;
     padding-top: 10px;
+    padding-bottom: 30px;
 }
 
 .conteudo-tabela-linha-head-descricao {
     width: 600px;
-    height: 50px;
-    font-family: 'Sarala', sans-serif;
-    color: #d18548;
-    font-size: 32px;
-    font-weight: bold;
-    padding-top: 10px;
 }
 
 .conteudo-tabela-linha-patente {
     width: 400px;
-    height: 200px;
+    height: 280px;
     display: flex;
     justify-content: center;
     flex-direction: column;  
-    gap: 20px 
+    gap: 20px;
+}
+
+.conteudo-tabela-linha-descricao {
+    width: 800px;
+    height: 300px;
+}
+
+.conteudo-tabela-coluna {
+    border-top: #ECD6C4 solid 1px;
+}
+
+.conteudo-tabela-coluna-first {
+    border-top: transparent;
+}
+
+.conteudo-tabela-coluna-last {
+    border-bottom: #ECD6C4 solid 1px;
 }
 
 .patente-p {
@@ -138,18 +189,18 @@ body {
 
 .patente-img {
     width: 120px;
-    height: 120px;
+    padding-left: 140px;
+}
+
+.patente-img-medio {
+    width: 120px;
+    height: 180px;
     padding-left: 140px;
 }
 
 .patente-img-maior {
     width: 280px;
     padding-left: 70px;
-}
-
-.conteudo-tabela-linha-descricao {
-    width: 800px;
-    height: 200px;
 }
 
 .descricao-p {
@@ -159,6 +210,7 @@ body {
     color: #FFF2E7;
     font-size: 18px;
     font-weight: 400;
+    text-align: center;
 }
 
 /* Footer */

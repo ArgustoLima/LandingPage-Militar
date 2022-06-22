@@ -9,6 +9,8 @@ body {
 
 .cabecalho {
     background-image: url("../Imagens/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .cabecalho-main {
@@ -141,8 +143,3 @@ body {
     font-style: italic;
     padding: 50px;
 }
-
-
-
-
-
