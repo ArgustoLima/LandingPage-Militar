@@ -112,6 +112,10 @@ body {
     color: black;
 }
 
+.seta:hover {
+    background-color: #d18648b9;
+}
+
 #conteudo-imagem {
     display: flex;
     justify-content: center;
